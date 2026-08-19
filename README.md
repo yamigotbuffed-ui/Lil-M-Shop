@@ -1,11 +1,11 @@
-# Lil M Shop
+# Beast Shop
 
 A Free Fire account marketplace: public storefront + a real, password-protected
 admin dashboard to manage listings. No npm packages required — only Node's
 built-in `http`, `node:sqlite`, and `crypto` modules, so there's nothing to
 compile or `npm install`.
 
-This started as a Claude-artifact React prototype (`lil-m-shop-premium.jsx`).
+This started as a Claude-artifact React prototype (`beast-shop-premium.jsx`).
 That version only worked inside Claude.ai — it used `window.storage` (an
 artifact-only API) for persistence and a hardcoded 4-digit PIN sitting in
 plain-text client code. This version is the real, sellable thing: the same
@@ -19,7 +19,7 @@ login, and shared data every visitor sees identically.
 ## Run it
 
 ```bash
-cd lil-m-shop
+cd beast-shop
 node server.js
 ```
 
@@ -120,7 +120,7 @@ anything outside this folder — it's genuinely theirs to run.
 ## File structure
 
 ```
-lil-m-shop/
+beast-shop/
 ├── server.js              # HTTP server + API routes
 ├── db.js                  # SQLite schema + seeding
 ├── auth.js                # login verification + session tokens
