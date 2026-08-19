@@ -233,5 +233,5 @@ const server = http.createServer(async (req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log(`Beast Shop server running at http://localhost:${PORT}`);
+  console.log(`Lil M Shop server running at http://localhost:${PORT}`);
 });

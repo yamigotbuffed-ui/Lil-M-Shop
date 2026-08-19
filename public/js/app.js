@@ -1,4 +1,4 @@
-/* ===================== Beast Shop — frontend app ===================== */
+/* ===================== Lil M Shop — frontend app ===================== */
 
 const CATEGORIES = [
   { id: 'prime1-4', label: 'PRIME 1–4', tagline: 'Starter-ranked, fast turnaround', icon: 'shield', grad: 'linear-gradient(135deg,#8a5a2c,#d9a154)', glow: '#d9a154' },
@@ -232,7 +232,7 @@ function renderProduct(id){
   }
   const cat = catInfo(product.category);
   const sold = product.status === 'sold';
-  const waText = encodeURIComponent(`Hi ${SETTINGS.shop_name || 'Beast Shop'}! I want to buy: "${product.title}" (${cat.label}) — ${nairaFmt(product.price)}`);
+  const waText = encodeURIComponent(`Hi ${SETTINGS.shop_name || 'Lil M Shop'}! I want to buy: "${product.title}" (${cat.label}) — ${nairaFmt(product.price)}`);
   const waLink = `https://wa.me/${SETTINGS.whatsapp_number}?text=${waText}`;
 
   app.innerHTML = `
@@ -269,7 +269,7 @@ function renderAdminLogin(){
     <div class="page-enter admin-gate-wrap">
       <div class="admin-gate-box premium-glass">
         <div class="head"><span>${icon('layout',20)}</span><span class="f-display" style="font-size:0.9rem;letter-spacing:.1em">CONTROL ROOM</span></div>
-        <p class="sub">Log in to manage ${esc(SETTINGS.shop_name || 'Beast Shop')} listings.</p>
+        <p class="sub">Log in to manage ${esc(SETTINGS.shop_name || 'Lil M Shop')} listings.</p>
         <form id="login-form">
           <div class="field">
             <label>Username</label>

@@ -439,7 +439,7 @@ function ProductPage({ product, go }) {
           <p className="mb-6 leading-relaxed" style={{ color: "#c4c0c9" }}>{product.desc || "No extra details provided for this listing."}</p>
           <div className="f-mono text-3xl font-bold mb-6" style={{ color: C.coral }}>{nairaFmt(product.price)}</div>
           <a
-            href={sold ? undefined : `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Hi Beast Shop! I want to buy: "${product.title}" (${cat.label}) \u2014 ${nairaFmt(product.price)}`)}`}
+            href={sold ? undefined : `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Hi Lil M Shop! I want to buy: "${product.title}" (${cat.label}) \u2014 ${nairaFmt(product.price)}`)}`}
             target="_blank" rel="noopener noreferrer"
             className={sold ? "w-full flex items-center justify-center gap-2 py-3.5 rounded-xl font-bold text-base pointer-events-none" : "buy-pulse w-full flex items-center justify-center gap-2 py-3.5 rounded-xl font-bold text-base"}
             style={sold ? { background: "rgba(255,255,255,0.05)", color: C.ashDim } : { background: `linear-gradient(135deg,${C.blood},${C.ember})`, color: "#fff" }}
@@ -464,7 +464,7 @@ function PinGate({ onUnlock }) {
     <div className="page-enter flex items-center justify-center p-6" style={{ minHeight: "70vh" }}>
       <div className="relative w-full max-w-sm rounded-2xl p-7 premium-glass" style={{ border: `1px solid rgba(0,229,199,0.3)`, background: C.panel2 }}>
         <div className="flex items-center gap-2 mb-1" style={{ color: C.cyan }}><LayoutDashboard size={20} /><span className="f-display text-sm tracking-widest">CONTROL ROOM</span></div>
-        <p className="text-sm mb-5" style={{ color: C.ash }}>Enter the admin PIN to manage Beast Shop listings.</p>
+        <p className="text-sm mb-5" style={{ color: C.ash }}>Enter the admin PIN to manage Lil M Shop listings.</p>
         <input type="password" inputMode="numeric" value={pin} onChange={(e) => setPin(e.target.value)} onKeyDown={(e) => e.key === "Enter" && submit()} placeholder="\u2022\u2022\u2022\u2022"
           className="w-full f-mono text-center text-2xl tracking-[0.5em] rounded-xl py-3 mb-4 outline-none"
           style={{ background: "rgba(0,0,0,0.4)", border: err ? `1px solid ${C.blood}` : `1px solid rgba(0,229,199,0.3)`, color: err ? C.blood : C.ghost }} />
