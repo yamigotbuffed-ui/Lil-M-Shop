@@ -10,7 +10,7 @@ function nairaFmt(n){ return '₦' + Number(n || 0).toLocaleString('en-NG'); }
 function esc(s){ const d = document.createElement('div'); d.textContent = s == null ? '' : String(s); return d.innerHTML; }
 
 let PRODUCTS = [];
-let SETTINGS = { shop_name: 'BEAST SHOP', whatsapp_number: '' };
+let SETTINGS = { shop_name: 'LIL M SHOP', whatsapp_number: '' };
 let TOKEN = localStorage.getItem('beast_admin_token') || null;
 let ADMIN_PRODUCTS = [];
 
@@ -70,7 +70,7 @@ function resizeImageFile(file, maxDim = 720, quality = 0.85){
 function renderNav(route){
   document.getElementById('brand-flame').innerHTML = icon('flame', 18);
   document.querySelector('#brand-flame').style.color = '#fff';
-  document.getElementById('brand-name-el').innerHTML = `${esc(SETTINGS.shop_name || 'BEAST SHOP')}<span class="brand-tag f-mono">MARKET</span>`;
+  document.getElementById('brand-name-el').innerHTML = `${esc(SETTINGS.shop_name || 'LIL M SHOP')}<span class="brand-tag f-mono">MARKET</span>`;
 
   const links = [
     { r: '#/', label: 'Home', ic: 'home' },
@@ -94,7 +94,7 @@ document.getElementById('nav-toggle').addEventListener('click', () => {
 
 function renderFooter(){
   document.getElementById('site-footer').innerHTML =
-    `<span class="f-mono">${esc(SETTINGS.shop_name || 'BEAST SHOP')} · Free Fire accounts bought &amp; sold · open 24/7</span>`;
+    `<span class="f-mono">${esc(SETTINGS.shop_name || 'LIL M SHOP')} · Free Fire accounts bought &amp; sold · open 24/7</span>`;
 }
 
 /* ---------- rank badge ---------- */
@@ -622,7 +622,7 @@ function renderAdminSettings(body){
       SETTINGS = await api('/api/admin/settings', {
         method: 'PUT',
         body: JSON.stringify({
-          shop_name: document.getElementById('s-shopname').value.trim() || 'BEAST SHOP',
+          shop_name: document.getElementById('s-shopname').value.trim() || 'LIL M SHOP',
           whatsapp_number: document.getElementById('s-whatsapp').value.trim()
         })
       });

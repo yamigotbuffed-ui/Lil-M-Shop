@@ -66,7 +66,7 @@ function ensureDefaultSettings() {
   }
   const shopName = db.prepare("SELECT value FROM settings WHERE key = 'shop_name'").get();
   if (!shopName) {
-    db.prepare("INSERT INTO settings (key, value) VALUES ('shop_name', 'BEAST SHOP')").run();
+    db.prepare("INSERT INTO settings (key, value) VALUES ('shop_name', 'LIL M SHOP')").run();
   }
 }
 
