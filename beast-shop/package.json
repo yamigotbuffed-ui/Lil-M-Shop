@@ -1,0 +1,8 @@
+{
+  "name": "beast-shop",
+  "version": "1.0.0",
+  "description": "Free Fire account marketplace — storefront + admin dashboard",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=22.0.0" }
+}
